@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luca - Software Developer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icone Lucide -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <style>
+        /* Stile per un gradiente di sfondo animato sul testo */
+        .animated-gradient {
+            background-image: linear-gradient(90deg, #38bdf8, #34d399, #a78bfa, #38bdf8);
+            background-size: 400% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient-animation 15s linear infinite;
+        }
+
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        /* Stile per la navbar con sfondo sfocato */
+        .navbar-blur {
+            background-color: rgba(15, 23, 42, 0.8); /* bg-slate-900 con trasparenza */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-gray-100 font-sans leading-relaxed">
+
+    <!-- Header & Navbar -->
+    <header class="navbar-blur sticky top-0 z-50 border-b border-slate-700/50">
+        <nav class="container mx-auto max-w-6xl px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">
+                <span class="animated-gradient">Luca</span>
+            </a>
+            <!-- Link "Progetti" rimosso -->
+            <div class="space-x-4 md:space-x-6">
+                <a href="#about" class="text-gray-300 hover:text-cyan-400 transition-colors">Chi Sono</a>
+                <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                    Contattami
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Sezione Hero -->
+        <section class="min-h-screen flex items-center justify-center text-center px-4" style="background-image: linear-gradient(rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 1));">
+            <div>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-4">
+                    Ciao, sono <span class="animated-gradient">Luca</span>.
+                </h1>
+                <p class="text-2xl md:text-3xl text-gray-300 mb-8">
+                    Software Developer & Studente di Informatica
+                </p>
+                <p class="max-w-2xl mx-auto text-lg text-gray-400 mb-12">
+                    Trasformo idee in soluzioni digitali. Creo siti web e app moderne, performanti e intuitive.
+                </p>
+                <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors">
+                    Hai un progetto? Parliamone
+                </a>
+            </div>
+        </section>
+
+        <!-- Sezione "Chi Sono" & Competenze -->
+        <section id="about" class="py-20 md:py-32">
+            <div class="container mx-auto max-w-6xl px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-4xl font-bold mb-6">Chi Sono</h2>
+                        <p class="text-gray-300 text-lg mb-4">
+                            Sono uno sviluppatore software specializzato nella creazione di app e siti web moderni. 
+                            Attualmente sto completando i miei studi in <strong class="text-cyan-400">Informatica</strong> all'università, un percorso che mi fornisce solide basi teoriche da affiancare alla pratica quotidiana.
+                        </p>
+                        <p class="text-gray-300 text-lg">
+                            La mia passione è trasformare idee complesse in soluzioni digitali eleganti e funzionali. 
+                            Sono costantemente aggiornato sulle ultime tecnologie per garantire che ogni progetto sia performante e all'avanguardia.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold mb-6">Cosa Faccio</h3>
+                        <div class="space-y-6">
+                            <div class="bg-slate-800 p-6 rounded-lg flex items-start space-x-4">
+                                <i data-lucide="layout-template" class="w-10 h-10 text-cyan-400 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="text-xl font-semibold mb-1">Sviluppo Web</h4>
+                                    <p class="text-gray-400">Creo siti web reattivi, e-commerce e API complesse utilizzando tecnologie come Python (Flask/Django) e il moderno stack JavaScript (React, Node.js).</p>
+                                </div>
+                            </div>
+                            <div class="bg-slate-800 p-6 rounded-lg flex items-start space-x-4">
+                                <i data-lucide="smartphone" class="w-10 h-10 text-cyan-400 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="text-xl font-semibold mb-1">Sviluppo App</h4>
+                                    <p class="text-gray-400">Progetto e sviluppo applicazioni mobili cross-platform per iOS e Android, concentrandomi su un'esperienza utente fluida e nativa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sezione Progetti rimossa. Potrai aggiungerla qui in futuro. -->
+
+        <!-- Sezione Contatti -->
+        <section id="contact" class="py-20 md:py-32 bg-slate-800/50">
+            <div class="container mx-auto max-w-3xl px-4 text-center">
+                <h2 class="text-4xl font-bold mb-4">Hai un progetto in mente?</h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Sei pronto a dare vita alla tua idea o hai bisogno di un sito web?
+                    Contattami, sarò felice di parlarne.
+                </p>
+                
+                <!-- Email -->
+                <a href="mailto:ellemsi119@gmail.com" class="text-3xl font-bold text-cyan-400 hover:text-cyan-300 transition-colors">
+                    ellemsi119@gmail.com
+                </a>
+                
+                <!-- Pulsanti Azione -->
+                <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="mailto:ellemsi119@gmail.com" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors flex items-center justify-center gap-2">
+                        <i data-lucide="mail" class="w-5 h-5"></i>
+                        Scrivimi un'email
+                    </a>
+                    <button id="copy-email-btn" class="bg-slate-700 hover:bg-slate-600 text-gray-200 font-bold py-3 px-8 rounded-lg text-lg transition-colors flex items-center justify-center gap-2">
+                        <i data-lucide="copy" class="w-5 h-5"></i>
+                        <span id="copy-btn-text">Copia Email</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-700/50">
+        <div class="container mx-auto max-w-6xl px-4 py-8 text-center text-gray-400">
+            <p>&copy; 2025 Luca. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <!-- Script JS -->
+    <script>
+        // Attiva le icone Lucide
+        lucide.createIcons();
+
+        // Script per lo scroll-smooth (per i link #)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Script per copiare l'email
+        const copyBtn = document.getElementById('copy-email-btn');
+        const copyBtnText = document.getElementById('copy-btn-text');
+        
+        copyBtn.addEventListener('click', () => {
+            const email = 'ellemsi119@gmail.com';
+            
+            // Usiamo un trucco per copiare negli appunti che funziona anche negli iframe
+            const textarea = document.createElement('textarea');
+            textarea.value = email;
+            textarea.style.position = 'fixed'; // Nascondi
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+            
+            try {
+                document.execCommand('copy');
+                // Feedback visivo
+                copyBtnText.textContent = 'Email Copiata!';
+                copyBtn.classList.add('bg-green-600', 'hover:bg-green-600');
+                
+                setTimeout(() => {
+                    copyBtnText.textContent = 'Copia Email';
+                    copyBtn.classList.remove('bg-green-600', 'hover:bg-green-600');
+                }, 2000);
+                
+            } catch (err) {
+                console.error('Errore nel copiare l\'email: ', err);
+                copyBtnText.textContent = 'Errore!';
+            }
+            
+            document.body.removeChild(textarea);
+        });
+    </script>
+</body>
+</html>
